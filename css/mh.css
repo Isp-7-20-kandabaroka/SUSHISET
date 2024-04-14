@@ -1,0 +1,43 @@
+.musthave{
+    color: rgb(0, 0, 0);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: auto;
+}
+.rectanglemusthavetovar{
+
+    width: 312px;
+height: 125px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Небольшая красивая тень */
+}
+.musthavetovar{
+    display: flex;
+}
+.musthaveprice{
+    margin-left: 20px;
+    padding-top: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.tovarmusthave{
+    display: flex;
+}
+.imgmusthavetovar{
+    padding-left: 20px;
+    width:125px;
+}
+.tovarname{
+    margin-top: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.box{
+    margin-left: 30px;
+}
+.rectanglemusthavetovar:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px black;
+}

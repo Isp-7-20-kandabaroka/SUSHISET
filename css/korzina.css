@@ -1,0 +1,32 @@
+
+.cart-products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-product {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    flex-basis: 20%;
+}
+
+.cart-product img {
+    max-width: 100px;
+    height: 100px;
+    height: auto;
+}
+.pickup{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+#pickup{
+    margin-top: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+#totalPriceDisplay{
+    margin-top: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+}

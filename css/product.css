@@ -1,0 +1,241 @@
+
+.product {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 580px;
+    margin-left: 0px; /* Отступ по умолчанию для всех элементов */
+    position: relative;
+    flex: 1 1 calc(20% - 20px); /* Задаем базовый размер элемента с учетом отступа */
+    max-width: calc(20% - 20px); /* Максимальная ширина элемента с учетом отступа */
+    box-sizing: border-box; /* Границы и padding включаются в ширину элемента */
+    /* Ваши другие стили для .product */
+}
+
+.product img {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Это гарантирует, что изображения не будут искажены */
+}
+.product img:hover {
+transform: translateY(-5px); /* Поднимает изображение на 5px вверх */
+}
+
+.nabors{
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-right: auto;
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+    
+    background-color: #ffb004;
+}
+.Dostav{
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-right: auto;
+    height: 40px;
+    width: 300px;
+    padding: 5px;
+    
+    background-color: #ffb004;
+}
+
+.Tovarzonename {
+    max-width: 1480px;
+    margin: 10px auto 0;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+}
+
+.Tovarzonename .tovarzone {
+    display: flex; /* Используем Flexbox для выравнивания товаров */
+    flex-wrap: wrap; /* Разрешаем элементам переноситься на следующую строку */
+    justify-content: flex-start; /* Выравниваем элементы по началу контейнера */
+    gap: 25px; /* Отступы между элементами */
+    margin-top: 20px;
+   
+}
+.btn-to-cart {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    background-color: #ffb004;
+    color: white; /* Белый текст */
+    border: none; /* Без границ */
+    border-radius: 20px; /* Скругление углов */
+    padding: 10px 20px; /* Внутренний отступ: 10px сверху и снизу, 20px слева и справа */
+    font-family: 'Noto Sans', sans-serif; /* Шрифт Noto Sans */
+    font-weight: 900; /* Жирное начертание */
+    text-transform: uppercase; /* Текст заглавными буквами */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+}
+
+.btn-to-favorite {
+    position: absolute;
+    bottom: 10px;
+    right: 0px ;
+    background-color: #FF9B26; /* Оранжевый фон */
+    color: white; /* Белый текст */
+    border: none; /* Без границ */
+    border-radius: 20px; /* Скругление углов */
+    padding: 10px 20px; /* Внутренний отступ: 10px сверху и снизу, 20px слева и справа */
+    font-family: 'Noto Sans', sans-serif; /* Шрифт Noto Sans */
+    font-weight: 900; /* Жирное начертание */
+    text-transform: uppercase; /* Текст заглавными буквами */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+}
+.btn-to-cart:hover, .btn-to-favorite:hover {
+    transform: scale(1.05); /* Увеличиваем размер кнопки на 5% */
+    background-color: #e67e22; /* Чуть темнее оттенок оранжевого */
+}
+
+.h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.productname{
+    width: 200px;  
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+.pricetovar{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'Noto Sans', sans-serif; /* Шрифт Noto Sans */
+    font-weight: 500; /* Жирное начертание */
+    position: absolute;
+    bottom: 60px;
+}
+.cart-items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cart-item {
+    width: 800px;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .cart-item-img {
+    width: 20%; /* Установите желаемый размер */
+  }
+  
+  .cart-item-details {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 15px;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+  }
+  
+  .cart-item-name{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .cart-item-description,
+  .cart-item-quantity,
+  .cart-item-price {
+    margin-bottom: 5px;
+  }
+   .quantity{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+   }
+  .quantity-modify {
+    
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    margin-right: 5px;
+    width: 25px;
+    border: 1px solid black;
+    font-size: 15px;
+    background-color: white;
+
+    cursor: pointer;
+  }
+  
+  .remove-item {
+    background-color: #FF9B26;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+  }
+  .remove-item:hover {
+    background-color: #e67e22;
+  }
+  .checkout-form{
+    display: block;
+  }
+  .buytovars{
+    
+    display: flex;
+    
+  }
+  .checkout-form {
+    width: 100%;
+    max-width: 400px;
+    margin-left: -180px;
+    padding: 20px;
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.checkout-form form {
+  
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkout-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FF9B26;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.checkout-form button:hover {
+    background-color: #cc7d23;
+}
+.total{
+  margin-top: 10px;
+  font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}

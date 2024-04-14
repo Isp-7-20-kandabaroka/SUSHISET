@@ -1,0 +1,61 @@
+/* Стиль модального окна */
+.modal {
+    display: none; /* Скрыть модальное окно по умолчанию */
+    position: fixed; /* Оставаться на месте при прокрутке */
+    z-index: 10; /* Сидеть над другими элементами */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включить прокрутку, если необходимо */
+    background-color: rgb(0,0,0); /* Цвет фона */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Отцентровать модальное окно на странице */
+    padding: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    border: 1px solid #888;
+    width: 400px; /* Ширина модального окна */
+    border-radius: 20px; /* Скругление углов */
+  }
+  
+  /* Стилизация формы в модальном окне */
+  #registrationForm {
+    display: flex;
+    flex-direction: column; /* Элементы формы в столбик */
+  }
+  
+  #registrationForm label {
+    margin-top: 10px; /* Отступ сверху для каждого label */
+  }
+  
+  #registrationForm input {
+    margin-top: 5px; /* Отступ сверху для каждого input */
+    padding: 10px; /* Паддинг для input */
+    border: 1px solid #ccc; /* Граница для input */
+    border-radius: 5px; /* Скругление углов для input */
+  }
+  
+  #registrationForm button {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    margin-top: 20px; /* Отступ сверху для кнопки */
+    padding: 10px 20px; /* Паддинг для кнопки */
+    background-color: #fb7f32; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убрать границу кнопки */
+    cursor: pointer; /* Курсор в виде указателя */
+    border-radius: 5px; /* Скругление углов кнопки */
+  }
+  
+  #registrationForm button:hover {
+    
+    background-color: #cc6627; /* Цвет фона кнопки при наведении */
+  }
+  .display{
+    display: flex;
+  }

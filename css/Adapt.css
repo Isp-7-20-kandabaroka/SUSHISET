@@ -1,0 +1,873 @@
+.nav .logo-mobile {
+  display: none;
+}
+.ate{
+  display: none;
+}
+.mobile-nav .working-hours {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+}
+.navactive {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.nav {
+  background-color: white;
+}
+
+.mobile-tame {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  gap: 10px;
+  /* Пример расстояния между элементами */
+}
+
+@media (max-width: 1500px) {
+  .footerline .footer {
+    display: none;
+  }
+
+  .manual {
+    display: none;
+  }
+
+  .nav>div {
+    background-color: white;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Скрыть меню по умолчанию */
+  .nav a {
+    border: none;
+    background: none;
+    /* Стили для текста при ширине окна браузера 1510px или больше */
+    color: #000;
+    /* Изменение цвета текста */
+    font-size: 14px;
+    box-shadow: none;
+    /* Уменьшенный размер шрифта */
+    /* Добавьте сюда любые другие стили, которые вам нужны */
+  }
+
+  .timetext {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .mobile-tame {
+    color: #000;
+    font-size: 15px;
+  }
+
+  .Cart .displaycart:nth-child(4n+4) {
+    margin-top: -9px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    display: none;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .box1 {
+    display: none;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .musthave {
+    display: none;
+  }
+
+  .timetext {
+    display: none;
+  }
+
+  img.clock {
+    display: none;
+  }
+
+  .slider-container {
+    display: none;
+  }
+
+  #goToCart {
+    display: none;
+  }
+
+  /* Стили для десктопов - ползунок скрыт */
+  .logo-mobile {
+    display: block;
+  }
+
+  .nav {
+    height: 60px;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* Скрываем полосу прокрутки по горизонтали */
+    white-space: nowrap;
+    /* Запрещаем перенос элементов на новую строку */
+  }
+
+  /* Стили для мобильных устройств */
+  @media (max-width: 600px) {
+    .nav {
+      padding-left: 10px;
+      border-radius: 0px;
+      overflow-x: auto;
+      /* Включаем полосу прокрутки по горизонтали */
+    }
+
+    /* Оформление для полосы прокрутки для Chrome, Safari и новых версий Edge */
+    ::-webkit-scrollbar {
+      width: 10px;
+      /* ширина полосы прокрутки */
+      height: 10px;
+      /* высота полосы прокрутки для горизонтальной прокрутки */
+    }
+
+    /* Оформление для ползунка полосы прокрутки */
+    ::-webkit-scrollbar-thumb {
+      background: orange;
+      /* цвет ползунка */
+      border-radius: 5px;
+      /* скругление углов */
+    }
+
+    /* Оформление для фона полосы прокрутки */
+    ::-webkit-scrollbar-track {
+      background: #ddd;
+      /* цвет фона */
+      border-radius: 5px;
+      /* скругление углов */
+    }
+
+    /* Стили для Firefox */
+    * {
+      scrollbar-width: thin;
+      /* "thin" для узкой полосы прокрутки или "auto" для стандартной */
+      scrollbar-color: orange #ddd;
+      /* ползунок и фон */
+    }
+
+
+    .nav a {
+      margin-top: 20px;
+      display: inline-block;
+      /* Элементы располагаются в линию */
+      margin-right: 10px;
+      /* Добавляем отступ справа для каждой ссылки */
+    }
+
+    .nav .time,
+    .nav .buy {
+      display: inline-block;
+      /* Также делаем элементы inline-block для правильного отображения */
+    }
+  }
+
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    /* Оранжевый фон, как в примере */
+  }
+
+  /* Стили для карточек */
+  .displaycart {
+
+    height: 120px;
+    flex-basis: calc(50% - 20px);
+    /* Две карточки в ряд */
+  }
+
+  .displaycart .carttext {
+    font-size: 10px;
+  }
+
+  .displaycart .cartnav {
+    width: 150px;
+    height: auto;
+  }
+
+  .Cart .displaycart {
+    margin: 0;
+    /* Resets both top and bottom margins */
+    padding: 0;
+    /* Resets padding if any was applied */
+    border: none;
+    /* Resets border if any was applied */
+    box-sizing: border-box;
+    /* Ensures that padding and border are included in the total width and height */
+  }
+
+  /* Additional styles to control spacing between the elements */
+  .Cart {
+    justify-content: center;
+    margin-left: 18px;
+    gap: 10px;
+    /* This creates space between flex items */
+  }
+
+  .Cart .displaycart:nth-child(4n+1),
+  .Cart .displaycart:nth-child(4n+2),
+  .Cart .displaycart:nth-child(4n+3),
+  .Cart .displaycart:nth-child(4n+4),
+  .Cart .displaycart:nth-child(4n+5),
+  .Cart .displaycart:nth-child(4n+6),
+  .Cart .displaycart:nth-child(4n+7) {
+
+    margin-left: 0px;
+    margin-top: 0px;
+
+  }
+
+  .mobile-tame {
+    font-size: 10px;
+  }
+
+  .mobile-nav {
+    display: flex;
+
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    /* Темный фон для лучшей видимости */
+    color: #000000;
+    /* Белый текст */
+    position: fixed;
+    /* Фиксированное позиционирование */
+    bottom: 0;
+    /* Прикрепляем к низу экрана */
+    left: 0;
+    width: 100%;
+    /* Полная ширина */
+    z-index: 1000;
+    /* Убедитесь, что навигация будет поверх других элементов */
+
+    /* Тень для эффекта подъема */
+  }
+
+  .mobile-nav .cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff9f00;
+    /* Оранжевый фон для кнопки */
+    padding: 10px 20px;
+    margin-top: -1px;
+    border-radius: 10px;
+    /* Скругление углов для кнопки */
+    text-decoration: none;
+    /* Убираем подчеркивание у ссылок */
+    color: #fff;
+    /* Белый текст на кнопке */
+    font-weight: bold;
+  }
+
+  .mobile-nav .working-hours {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+  }
+
+  /* Скрыть десктопную навигацию */
+  .desktop-nav {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .linedel {
+    display: none;
+  }
+  .promotion {
+    font-family: 'Noto Sans', sans-serif;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.promotion-header {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.promotion-content {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+  .ate{
+    margin-top: -520px;
+    
+    display: block;
+  }
+  .acttcontent{
+    display: none;
+  }
+  .container {
+    display: none;
+  }
+
+  .rectangle {
+    display: none;
+  }
+
+  .box1 {
+    display: none;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .musthave {
+    display: none;
+  }
+
+  .timetext {
+    display: none;
+  }
+
+  img.clock {
+    display: none;
+  }
+
+  .cart-item-details {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Ширина элемента занимает все доступное пространство */
+  }
+
+  .remove-item {
+    background-color: #FF9B26;
+    color: white;
+    padding: 10px 20px;
+    /* Увеличенный отступ для лучшего взаимодействия на сенсорных устройствах */
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    /* Увеличенный размер шрифта для лучшей видимости */
+    transition: background-color 0.3s ease;
+    /* Плавное изменение цвета при наведении */
+    display: inline-block;
+    /* Обеспечивает правильное отображение и возможность устанавливать отступы */
+    margin: 5px;
+    /* Добавляет небольшой отступ вокруг кнопки */
+    min-width: 120px;
+    /* Минимальная ширина для улучшения доступности на мобильных устройствах */
+  }
+
+
+  .cart-items .cart-item {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Позволяет элементам переноситься на новую строку */
+    align-items: center;
+    /* Выравнивает элементы по вертикали */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* Добавляет небольшой отступ снизу для каждого элемента */
+
+    /* Цвет фона для лучшей видимости */
+    border: 1px solid #ddd;
+    /* Тонкая граница вокруг элемента */
+    border-radius: 5px;
+    /* Скругление углов */
+  }
+
+  /* Стили для дочерних элементов внутри .cart-item для дополнительной адаптивности */
+  .cart-item img {
+    width: 100%;
+    /* Заставляет изображения адаптироваться к размеру контейнера */
+    max-width: 150px;
+    /* Максимальная ширина изображения */
+    height: auto;
+    /* Высота изменяется автоматически в зависимости от ширины */
+  }
+
+  .buytovars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Центрирует элементы по горизонтали */
+    justify-content: center;
+    /* Выравнивание элементов с начала контейнера */
+    width: 100%;
+    /* Занимает всю доступную ширину */
+    padding: 10px;
+    /* Небольшой отступ вокруг содержимого */
+  }
+  .buytovars .checkout-form{
+    margin-left: 10px;
+  }
+
+  .slider-container {
+    display: none;
+  }
+
+
+  #goToCart {
+    display: none;
+  }
+
+  .buytovars {
+    display: block;
+  }
+
+  /* Стили для десктопов - ползунок скрыт */
+  .nav {
+    top: 0;
+    overflow-x: hidden;
+    /* Скрываем полосу прокрутки по горизонтали */
+    white-space: nowrap;
+    /* Запрещаем перенос элементов на новую строку */
+  }
+
+  /* Стили для мобильных устройств */
+  @media (max-width: 1400px) {
+    .nav {
+      padding-left: 10px;
+      border-radius: 0px;
+      overflow-x: auto;
+      /* Включаем полосу прокрутки по горизонтали */
+    }
+
+    /* Оформление для полосы прокрутки для Chrome, Safari и новых версий Edge */
+    ::-webkit-scrollbar {
+      width: 10px;
+      /* ширина полосы прокрутки */
+      height: 10px;
+      /* высота полосы прокрутки для горизонтальной прокрутки */
+    }
+
+    /* Оформление для ползунка полосы прокрутки */
+    ::-webkit-scrollbar-thumb {
+      background: orange;
+      /* цвет ползунка */
+      border-radius: 5px;
+      /* скругление углов */
+    }
+
+    /* Оформление для фона полосы прокрутки */
+    ::-webkit-scrollbar-track {
+      background: #ddd;
+      /* цвет фона */
+      border-radius: 5px;
+      /* скругление углов */
+    }
+
+    /* Стили для Firefox */
+    * {
+      scrollbar-width: thin;
+      /* "thin" для узкой полосы прокрутки или "auto" для стандартной */
+      scrollbar-color: orange #ddd;
+      /* ползунок и фон */
+    }
+
+
+    .nav a {
+      display: inline-block;
+      /* Элементы располагаются в линию */
+      margin-right: 10px;
+      /* Добавляем отступ справа для каждой ссылки */
+    }
+
+    .nav .time,
+    .nav .buy {
+      display: inline-block;
+      /* Также делаем элементы inline-block для правильного отображения */
+    }
+  }
+
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    /* Оранжевый фон, как в примере */
+  }
+
+  /* Стили для карточек */
+  .displaycart {
+
+    height: 120px;
+
+  }
+
+  .displaycart .carttext {
+    font-size: 10px;
+  }
+
+  .displaycart .cartnav {
+    width: 300px;
+    height: auto;
+  }
+
+  .Cart .displaycart {
+    margin: 80px;
+    /* Resets both top and bottom margins */
+    padding: 0;
+    /* Resets padding if any was applied */
+    border: none;
+    /* Resets border if any was applied */
+    box-sizing: border-box;
+    /* Ensures that padding and border are included in the total width and height */
+  }
+
+  /* Additional styles to control spacing between the elements */
+  .Cart {
+    margin-left: 200px;
+    gap: 10px;
+    /* This creates space between flex items */
+  }
+
+  .Cart .displaycart:nth-child(4n+1),
+  .Cart .displaycart:nth-child(4n+2),
+  .Cart .displaycart:nth-child(4n+3),
+  .Cart .displaycart:nth-child(4n+4),
+  .Cart .displaycart:nth-child(4n+5),
+  .Cart .displaycart:nth-child(4n+6),
+  .Cart .displaycart:nth-child(4n+7) {
+
+    margin-left: 0px;
+    margin-top: 0px;
+
+  }
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    /* Темный фон для лучшей видимости */
+    color: #ffffff;
+    /* Белый текст */
+    position: fixed;
+    /* Фиксированное позиционирование */
+    bottom: 0;
+    /* Прикрепляем к низу экрана */
+    left: 0;
+    width: 100%;
+    /* Полная ширина */
+    z-index: 1000;
+    /* Убедитесь, что навигация будет поверх других элементов */
+  }
+
+  .mobile-nav .cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff9f00;
+    /* Оранжевый фон для кнопки */
+    padding: 10px 20px;
+    margin-top: -1px;
+    border-radius: 10px;
+    /* Скругление углов для кнопки */
+    text-decoration: none;
+    /* Убираем подчеркивание у ссылок */
+    color: #fff;
+    /* Белый текст на кнопке */
+    font-weight: bold;
+  }
+
+  .mobile-nav .working-hours {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+  }
+
+  .product {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .productname,
+  .pricetovar {
+    bottom: 70px;
+    text-align: center;
+    /* Выравниваем текст по центру */
+    font-size: 1rem;
+    /* Размер шрифта для имени и цены товара */
+  }
+
+  .add-to-cart-form {
+    width: 180px;
+    position: absolute;
+    /* Абсолютное позиционирование для формы */
+    bottom: 10px;
+    /* Отступ снизу */
+    left: 100px;
+    /* Позиционирование слева от середины блока */
+    transform: translateX(-50%);
+    /* Смещение формы на половину её ширины для центрирования */
+  }
+
+  /* Скрыть десктопную навигацию */
+  .desktop-nav {
+    display: none;
+  }
+
+}
+
+.product {
+  flex: 1 1 calc(20% - 20px);
+  /* Базовый размер для больших экранов */
+  max-width: calc(20% - 20px);
+  /* Максимальная ширина для больших экранов */
+}
+
+@media (max-width: 1280px) {
+  .Cart {
+    margin-left: 250px;
+    gap: 10px;
+    /* This creates space between flex items */
+  }
+}
+@media (max-width: 1110px) {
+  .Cart {
+    margin-left: 150px;
+    gap: 10px;
+    /* This creates space between flex items */
+  }
+}
+/* Стили для средних экранов */
+@media (max-width: 1024px) {
+  .displaycart .cartnav {
+    width: 150px;
+    height: auto;
+  }
+
+  .Cart .displaycart {
+    margin: 0;
+    /* Resets both top and bottom margins */
+    padding: 0;
+    /* Resets padding if any was applied */
+    border: none;
+    /* Resets border if any was applied */
+    box-sizing: border-box;
+    /* Ensures that padding and border are included in the total width and height */
+  }
+
+  /* Additional styles to control spacing between the elements */
+  .Cart {
+    margin-left: 18px;
+    gap: 10px;
+    /* This creates space between flex items */
+  }
+  .ate{
+    margin-top: -250px;
+    
+    display: block;
+  }
+  .dostavka .Dostav .map {
+    display: grid;
+    width: 300px;
+  }
+  .dostavka{
+    width: 400px;
+  }
+  .dostavka .Dostav .map .mapmap{
+    display: none;
+
+  }
+  .dostavka .Dostav .map .delivery-info{
+    
+    width: 665px;
+  }
+  .buytovars .checkout-form{
+    margin-left: 1px;
+  }
+  .cart-item-details {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Ширина элемента занимает все доступное пространство */
+  }
+
+  .remove-item {
+    background-color: #FF9B26;
+    color: white;
+    padding: 10px 20px;
+    /* Увеличенный отступ для лучшего взаимодействия на сенсорных устройствах */
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    /* Увеличенный размер шрифта для лучшей видимости */
+    transition: background-color 0.3s ease;
+    /* Плавное изменение цвета при наведении */
+    display: inline-block;
+    /* Обеспечивает правильное отображение и возможность устанавливать отступы */
+    margin: 5px;
+    /* Добавляет небольшой отступ вокруг кнопки */
+    min-width: 120px;
+    /* Минимальная ширина для улучшения доступности на мобильных устройствах */
+  }
+
+
+  .cart-items .cart-item {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Позволяет элементам переноситься на новую строку */
+    align-items: center;
+    /* Выравнивает элементы по вертикали */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* Добавляет небольшой отступ снизу для каждого элемента */
+
+    /* Цвет фона для лучшей видимости */
+    border: 1px solid #ddd;
+    /* Тонкая граница вокруг элемента */
+    border-radius: 5px;
+    /* Скругление углов */
+  }
+
+  /* Стили для дочерних элементов внутри .cart-item для дополнительной адаптивности */
+  .cart-item img {
+    width: 100%;
+    /* Заставляет изображения адаптироваться к размеру контейнера */
+    max-width: 150px;
+    /* Максимальная ширина изображения */
+    height: auto;
+    /* Высота изменяется автоматически в зависимости от ширины */
+  }
+
+  .buytovars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Центрирует элементы по горизонтали */
+    justify-content: center;
+    /* Выравнивание элементов с начала контейнера */
+    width: 100%;
+    /* Занимает всю доступную ширину */
+    padding: 10px;
+    /* Небольшой отступ вокруг содержимого */
+  }
+  .product {
+    flex: 1 1 calc(33.333% - 20px);
+    /* Три элемента в строке */
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+/* Стили для маленьких экранов */
+@media (max-width: 768px) {
+  .ate{
+    margin-top: -100px;
+  }
+  .dostavka .Dostav .map .delivery-info{
+    
+    width: 465px;
+  }
+  .cart-items .cart-item {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Позволяет элементам переноситься на новую строку */
+    align-items: center;
+    /* Выравнивает элементы по вертикали */
+    padding: 10px;
+    margin-bottom: 10px;
+    /* Добавляет небольшой отступ снизу для каждого элемента */
+
+    /* Цвет фона для лучшей видимости */
+    border: 1px solid #ddd;
+    /* Тонкая граница вокруг элемента */
+    border-radius: 5px;
+    /* Скругление углов */
+  }
+
+  /* Стили для дочерних элементов внутри .cart-item для дополнительной адаптивности */
+  .cart-item img {
+    width: 100%;
+    /* Заставляет изображения адаптироваться к размеру контейнера */
+    max-width: 150px;
+    /* Максимальная ширина изображения */
+    height: auto;
+    /* Высота изменяется автоматически в зависимости от ширины */
+  }
+
+  .buytovars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Центрирует элементы по горизонтали */
+    justify-content: center;
+    /* Выравнивание элементов с начала контейнера */
+    width: 100%;
+    /* Занимает всю доступную ширину */
+    padding: 10px;
+    /* Небольшой отступ вокруг содержимого */
+  }
+  .product {
+    flex: 1 1 calc(50% - 20px);
+    /* Два элемента в строке */
+    max-width: calc(50% - 20px);
+  }
+  .Cart{
+    margin-left: 40px;
+  }
+}
+
+/* Стили для очень маленьких экранов */
+@media (max-width: 480px) {
+  .Cart{
+    margin-left: 18px;
+  }
+  .dostavka .Dostav .map .delivery-info{
+    
+    width: 265px;
+  }
+  .product {
+    flex: 1 1 100%;
+    /* Один элемент на всю ширину */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 540px) {}

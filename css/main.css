@@ -1,0 +1,337 @@
+/* БАЗА */
+/* БАЗА */
+html {
+
+    background-color: #ffffff;
+}
+
+body {
+
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* БАЗА */
+/* БАЗА */
+
+.sait {
+
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+/* Центрирование контента внутри .sait с верхним отступом */
+.sait>.slider-container {
+    max-width: 1480px;
+    /* Максимальная ширина для централизованного контента */
+    margin: 10px auto 0;
+    /* Верхний отступ 20px и автоцентрирование по горизонтали */
+    width: calc(100% - 40px);
+    /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box;
+    /* Учитывает padding и border в общей ширине элемента */
+}
+
+.sait>.buytovars {
+    max-width: 1480px;
+    /* Максимальная ширина для централизованного контента */
+    margin: 40px auto 0;
+    /* Верхний отступ 20px и автоцентрирование по горизонтали */
+    width: calc(100% - 40px);
+    /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box;
+    /* Учитывает padding и border в общей ширине элемента */
+}
+
+.sait>.rectangle {
+    max-width: 1480px;
+    /* Максимальная ширина для централизованного контента */
+    margin: 10px auto 0;
+    /* Верхний отступ 20px и автоцентрирование по горизонтали */
+    width: calc(100% - 40px);
+    /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box;
+    /* Учитывает padding и border в общей ширине элемента */
+}
+
+.sait>.nav {
+
+    max-width: 1480px;
+    /* Максимальная ширина для централизованного контента */
+    margin: 10px auto 0;
+    /* Верхний отступ 20px и автоцентрирование по горизонтали */
+    width: calc(100% - 40px);
+    /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box;
+    /* Учитывает padding и border в общей ширине элемента */
+}
+
+.sait>.musthave {
+    max-width: 1480px;
+    /* Максимальная ширина для централизованного контента */
+    margin: 20px auto 0;
+    /* Верхний отступ 20px и автоцентрирование по горизонтали */
+    width: calc(100% - 40px);
+    /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box;
+    /* Учитывает padding и border в общей ширине элемента */
+}
+
+.sait>.musthavetovar {
+    max-width: 1480px;
+    /* Максимальная ширина для централизованного контента */
+    margin: 20px auto 0;
+    /* Верхний отступ 20px и автоцентрирование по горизонтали */
+    width: calc(100% - 40px);
+    /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box;
+    /* Учитывает padding и border в общей ширине элемента */
+}
+
+.sait>.dostavka {
+    height: 1000px;
+    max-width: 1480px;
+    /* Максимальная ширина для централизованного контента */
+    margin: 20px auto 0;
+    /* Верхний отступ 20px и автоцентрирование по горизонтали */
+    width: calc(100% - 40px);
+    /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box;
+    /* Учитывает padding и border в общей ширине элемента */
+}
+
+.sait>.acttcontent {
+    max-width: 1480px;
+    /* Максимальная ширина для централизованного контента */
+    margin: 20px auto 0;
+    /* Верхний отступ 20px и автоцентрирование по горизонтали */
+    width: calc(100% - 40px);
+    /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box;
+    /* Учитывает padding и border в общей ширине элемента */
+}
+
+
+
+
+/* Для первого элемента внутри контейнеров убираем верхний отступ, чтобы не было двойного отступа */
+.sait>.rectangle:first-child,
+.sait> {
+    margin-top: 0;
+}
+
+/* Верхушка сайта */
+.upcontent {
+    margin-left: -1200px;
+}
+
+/* Верхушка сайта */
+.container {
+    background-color: #ffffff;
+    justify-content: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    /* Центрируем содержимое по вертикали */
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid #E3E3E3;
+    position: relative;
+    /* Добавлено относительное позиционирование */
+
+}
+
+
+
+/* ВЕРХУШКА САМАЯ */
+/* ВЕРХУШКА САМАЯ */
+
+
+
+.item {
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    /* Для позиционирования псевдо-элемента */
+    display: inline-block;
+    /* Элемент будет занимать только необходимую ширину */
+}
+
+.item:hover::after {
+
+    content: '';
+    /* Необходимо для создания псевдо-элемента */
+    position: absolute;
+    /* Абсолютное позиционирование относительно .item */
+    left: 0;
+    right: 0;
+    color: #FF9B26;
+    bottom: -12px;
+    /* Выравнивание относительно нижней границы .item */
+    border-bottom: 2px solid #FF9B26;
+    /* Оранжевая нижняя граница при hover */
+    width: 100%;
+    /* Ширина границы равна ширине .item */
+}
+
+.item:last-child {
+    margin-right: 0;
+}
+
+/* ВЕРХУШКА САМАЯ */
+/* ВЕРХУШКА САМАЯ */
+
+
+/* ПРОСТО БЛОК В КОТОРОМ ВСЁ НАХОДИТСЯ))))))) */
+/* ПРОСТО БЛОК В КОТОРОМ ВСЁ НАХОДИТСЯ))))))) */
+
+.rectangle {
+    position: relative;
+    margin-top: 20px;
+    width: 1480px;
+    height: 150px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+/* ПРОСТО БЛОК В КОТОРОМ ВСЁ НАХОДИТСЯ))))))) */
+/* ПРОСТО БЛОК В КОТОРОМ ВСЁ НАХОДИТСЯ))))))) */
+
+/* ЛОГО И НАДПИСЬ ВОКРУГ НЕГО*/
+/* ЛОГО И НАДПИСЬ ВОКРУГ НЕГО*/
+
+.logo {
+    cursor: pointer;
+    width: 350px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.rating-block {
+    margin-left: 28px;
+
+    .title {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }
+
+    .description,
+    .description1 {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -3px;
+    }
+
+    .description1:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+/* ЛОГО И НАДПИСЬ ВОКРУГ НЕГО*/
+/* ЛОГО И НАДПИСЬ ВОКРУГ НЕГО*/
+
+.tele2 {
+
+    margin-left: 30px;
+
+    .numbertel {
+        cursor: pointer;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 300;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .numberteltext {
+        cursor: pointer;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .numimg {
+        display: flex;
+    }
+
+}
+
+.ADRESINPUT {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Небольшая красивая тень */
+    margin-left: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.ADRESINPUT img {
+    height: 17px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.ADRESINPUT input {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    border-radius: 10px;
+    height: 25px;
+    width: calc(100% - 30px);
+
+}
+
+
+.Profile {
+    cursor: pointer;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+
+    .name {
+        margin-right: 10px;
+    }
+}
+
+
+
+
+  .vhod{
+    font-family: 'Noto Sans', sans-serif;
+        font-weight: 300;
+    padding: 6px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 30px;
+    height: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+

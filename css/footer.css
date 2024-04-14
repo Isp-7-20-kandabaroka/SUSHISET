@@ -1,0 +1,112 @@
+.footerline {
+    margin-top: 40px;
+    bottom: 0;
+    
+    border-top: 1px solid rgb(185, 185, 185);
+    /* Оранжево-темный градиент */
+    display: flex;
+    /* Добавляем flex контейнер */
+    justify-content: center;
+    /* Центрируем содержимое по горизонтали */
+}
+
+
+.footer {
+    display: flex;
+    max-width: 1480px;
+    /* Максимальная ширина для централизованного контента */
+
+    width: calc(100% - 40px);
+    /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box;
+    /* Учитывает padding и border в общей ширине элемента */
+}
+
+.footerline {
+    width: 100%;
+    background-color: #ffffff; /* Темный фон для футера */
+    color: #000000; /* Белый текст для контраста */
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap; /* Обеспечиваем перенос элементов на новую строку на малых экранах */
+    justify-content: space-evenly; /* Распределяем элементы равномерно */
+    padding: 20px;
+    align-items: center; /* Центрируем элементы по вертикали */
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+  }
+  
+  .footerpuncts {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column; /* Ставим элементы в колонку на малых экранах */
+    align-items: center; /* Центрируем элементы */
+    padding: 10px 0; /* Добавляем отступы сверху и снизу */
+  }
+  
+  .footerpuncts a {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    color: #1d1d1d; /* Белый цвет текста */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    padding: 5px;
+    margin: 5px 0; /* Отступы между ссылками */
+    text-align: center; /* Центрируем текст */
+  }
+  
+  .footerpuncts .imgsoc {
+    display: flex;
+    justify-content: center; /* Центрируем иконки соцсетей */
+  }
+  
+  .footerpuncts .imgsoc a img {
+    width: 30px; /* Устанавливаем размеры иконок */
+    height: auto;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .manual {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+    color: rgb(102, 102, 102);
+    background-color: #ffffff; /* Чуть более темный фон для копирайта */
+    font-size: 14px;
+  }
+
+.map {
+    margin-top: 40px;
+    display: flex;
+    width: 1480px;
+}
+
+.delivery-info {
+    width: 600px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    /* Цвет текста */
+    background-color: #f9f9f9;
+    /* Цвет фона */
+    padding: 20px;
+    /* Внутренний отступ */
+    border-radius: 10px;
+    /* Скругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Тень */
+}
+
+.delivery-info strong {
+    color: #555;
+    /* Цвет для жирного текста */
+}

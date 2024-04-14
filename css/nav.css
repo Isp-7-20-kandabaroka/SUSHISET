@@ -1,0 +1,150 @@
+.nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    align-items: center;
+    position: relative;
+    position: -webkit-sticky; /* Для Safari */
+    position: sticky;
+    top: 0; /* Определяет, на каком расстоянии от верхней части viewport элемент должен стать "липким" */
+    z-index: 1; /* Убедитесь, что ваша навигация находится поверх других элементов */
+    
+}
+
+.nav > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav > div::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    transform: translateY(-50%);
+    pointer-events: none; /* Добавлено, чтобы прямоугольник не перехватывал события мыши */
+    opacity: 0; /* Скрыт по умолчанию */
+}
+
+.nav > div.active::before {
+    opacity: 1; /* Показать при активации */
+}
+.nav a{
+   
+    font-size: 14px;
+    margin-top: 2px;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.nav a:hover{
+    transition: 0.2s;
+   color: white;
+    background-color: #ffb004;
+}
+
+.buy{
+    right: 0;
+    text-decoration: none;
+    height: 40px;
+    width: 120px;
+    color: rgb(255, 255, 255);
+    background-color: #ffb004;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    margin-left: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+.heart {
+    
+    width: 17px;
+    height: 17px;
+    padding-top: 12px; /* Задаем отступы сверху и снизу */
+}
+.nav-buttons{
+    max-width: 1480px; /* Максимальная ширина для централизованного контента */
+    margin: 10px auto 0; /* Верхний отступ 20px и автоцентрирование по горизонтали */
+    width: calc(100% - 40px); /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box; /* Учитывает padding и border в общей ширине элемента */
+}
+.Cart {
+    cursor: pointer;
+    display: flex; /* Включает Flexbox для контейнера */
+    flex-wrap: wrap; /* Разрешает элементам переноситься на следующую строку */
+    justify-content: flex-start; /* Выравниваем элементы по началу контейнера */
+    max-width: 1480px; /* Максимальная ширина для централизованного контента */
+    margin-top: 20px;
+    width: calc(100% - 40px); /* Предотвращает выход контента за пределы экрана на узких устройствах */
+    box-sizing: border-box; /* Учитывает padding и border в общей ширине элемента */
+}
+
+.cartnav {
+    width: 340px;
+    height: auto;
+}
+.carttext{
+    margin-top: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+}
+.displaycart{
+     height: 300px;
+    align-items: center; /* Выравнивает элементы внутри по вертикальному центру */
+    flex-direction: row; /* Элементы внутри .display будут расположены горизонтально */
+}
+.cartnav:hover{
+    scale: 1.01;
+}
+/* Применяется к каждому элементу, начиная со второго */
+.Cart .displaycart:nth-child(4n+2), 
+.Cart .displaycart:nth-child(4n+3), 
+.Cart .displaycart:nth-child(4n+4) {
+   
+    margin-left: 20px; /* Отступ для 2-го, 3-го и 4-го элемента в каждом ряду */
+}
+.Cart .displaycart:nth-child(4n+5), 
+.Cart .displaycart:nth-child(4n+6), 
+.Cart .displaycart:nth-child(4n+7) {
+    margin-top:-10px;
+    
+}
+ a {
+    margin-top: 10px;
+    color: black; /* Или любой другой цвет */
+    text-decoration: none;
+}
+.time{
+    margin-left: 20px;
+    border: 1px solid rgb(85, 85, 85);
+    border-radius: 30px;
+}
+.timetext{
+    
+    padding: 10px;
+    font-weight: 300;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 10px;
+    font-size: 12px;
+    
+    color: rgb(51, 51, 51);
+}
